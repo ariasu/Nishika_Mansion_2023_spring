@@ -1,0 +1,290 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>国土数値情報　地価公示(L01-****P-2K_@@)</title>
+</head>
+<body>
+  <h2 align="center">
+    国土数値情報　地価公示(L01-****P-2K_@@)<br>データ形式（第3.1版）
+  </h2>
+  <p>データは、csv(コンマ区切りのテキストデータ）形式です。****にはデータの調査年（西暦）が4桁で入ります。また@@には都道府県コードが入ります。（例：北海道の2022年（令和4年データ）：L01-2022P-2K_01.csv）</p>
+  <p align="right">データのフォーマットは、平成14年度決定<br>平成16年度一部修正（第1.0版）<br>平成19年度一部修正・変更（第2.0版）<br>平成26年度一部修正・変更（第2.2版）<br>平成27年度一部修正・変更（第2.3版）<br>平成29年度一部修正・変更（第2.4版）<br>平成30年度一部修正・変更（第2.5版）<br>令和4年度一部修正・変更（第3.1版）</p>
+  <table width="100%" border="1" cellspacing="2" cellpadding="1">
+    <tr>
+      <th colspan="4" height="19"> <font size="-1">項目</font></th>
+      <th height="19"> <font size="-1">内容</font></th>
+    </tr>
+    <tr>
+      <td colspan="4"> 経度（Ｘ座標）</td>
+      <td height="20" rowspan="2"> 単位[秒]（例：501376.613＝139.2712816°＝139°16’16.613”）<br>座標値は世界測地系</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 緯度（Ｙ座標）</td>
+    </tr>
+    <tr>
+      <td rowspan="3" align="center"> 標<br>準<br>地<br>番<br>号</td>
+      <td colspan="3"height="20"> 所在地コード</td>
+      <td height="20"> 総務省「全国地方公共団体コード」</td>
+    </tr>
+    <tr>
+      <td colspan="3" height="20"> 用途</td>
+      <td height="20"> 000：住宅地<br>003：宅地見込地<br>005：商業地<br>007：準工業地<br>009：工業地<br>010：市街化調整区域内の現況宅地<br>013：市街化調整区域内の現況林地</td>
+    </tr>
+    <tr>
+      <td colspan="3" height="20"> 連番</td>
+      <td height="20"> 一連番号</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 年次</td>
+      <td height="20"> 西暦、最新選定年次</td>
+    </tr>
+    <tr>
+      <td rowspan="3" align="center">前<br>年<br>標<br>準<br>地<br>番<br>号</td>
+      <td colspan="3"height="20"> 前年所在地コード</td>
+      <td height="20"> 総務省「全国地方公共団体コード」</td> </tr>
+    <tr>
+      <td colspan="3" height="20"> 前年用途</td>
+      <td height="20"> 000：住宅地<br>003：宅地見込地<br>005：商業地<br>007：準工業地<br>009：工業地<br>010：市街化調整区域内の現況宅地<br>013：市街化調整区域内の現況林地</td>
+    </tr>
+    <tr>
+      <td colspan="3" height="20"> 前年連番</td>
+      <td height="20"> 一連番号</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 市区町村名</td>
+      <td height="20"> 標準地の市区町村の名称</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 所在並びに地番</td>
+      <td height="20"> 基準地の所在及び地番</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 住居表示</td>
+      <td height="20"> 標準地の住居表示又は地番</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 行政（行政区域コード）</td>
+      <td height="20"> 総務省「全国地方公共団体コード」</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 地積</td>
+      <td height="20"> 単位[平方m]</td>
+    </tr>
+    <tr>
+      <td align="center"> 利<br>用<br>の<br>現<br>況</td>
+      <td colspan="3"> 住宅<br>店舗<br>事務所<br>銀行<br>旅館<br>給油所<br>工場<br>倉庫<br>農地<br>山林<br>医院<br>空地<br>作業場<br>原野<br>その他<br>用材<br>雑木<br>の17項目</td>
+      <td>基準地・標準地の利用の現況を表示<br>それぞれの項目について<br> 1：用途地域を示すもの<br>0：それ以外<br>を順に17文字でセットする<br>(例：利用現況が｢店舗」の場合は、「01000000000000000」となる)</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 利用状況表示</td>
+      <td height="20"> 「利用の現況」が“その他”の場合の利用状況（自由記述）</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 利用区分</td>
+      <td height="20">001：建物等の敷地<br>002：田<br>003：畑<br>004：その他（原野等）<br>005：山林</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 建物構造</td>
+      <td height="20">
+         建物構造略号は次の通り、数字はその階層を示す<br>（地下階層がある場合、地上階層にはFを地下階層にはBを付している）<br>
+         SRC：鉄骨鉄筋コンクリート造<br>RC：鉄筋コンクリート造<br>S：鉄骨造<br>LS：軽量鉄骨造<br>B：ブロック造<br>W：木造
+       </td>
+    </tr>
+    <tr>
+      <td colspan="2"> 施設（供給施設の有無）</td>
+      <td colspan="2"> 水道<br>ガス<br>下水<br>の3項目</td>
+      <td> 1：施設の整備されているもの<br>0：施設の整備されていないもの<br>をそれぞれの項目について順にセットする<br>(例：水道及びガスの施設がある場合は「110」となる)</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 形状区分</td>
+      <td height="20"> 基準地の形状による区別を表示<br>台形<br>不整形</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 間口（比率）</td>
+      <td height="20"> 間口幅と奥行幅の比率（短い方を基準値010とする）</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 奥行（比率）</td>
+      <td height="20"> 間口幅と奥行幅の比率（短い方を基準値010とする）</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 階層（地上）</td>
+      <td height="20"> 単位[階]</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 階層（地下）</td>
+      <td height="20"> 単位[階]</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 前面道路区分</td>
+      <td height="20"> 標準地の前面道路による区別を表示<br>国道<br>都道<br>道道<br>府道<br>
+県道<br>市道<br>区道<br>町道<br>村道<br>私道<br>農道<br>林道<br>区画街路<br>道路</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 前面道路の方位区分</td>
+      <td height="20"> 標準地の前面道路の方位による区別を表示<br>東<br>南<br>西<br>北<br>南東<br>南西<br>北西<br>北東</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 前面道路の幅員</td>
+      <td height="20"> 単位[10cm]</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 前面道路の駅前区分</td>
+      <td height="20"> 標準地の前面道路の駅前による区別を表示<br>駅前広場</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 前面道路の舗装状況</td>
+      <td height="20"> 標準地の前面道路の舗装状況を表示<br>未舗装</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 側道区分</td>
+      <td height="20"> 側道<br>三方路<br>四方路<br>一方路・準角地<br>背面道<br>その他</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 側道方位区分</td>
+      <td height="20"> 標準地の側道の方位による区別を表示<br>東<br>西<br>南<br>北<br>南東<br>南西<br>北西<br>北東</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 交通施設との近接状況</td>
+      <td height="20"> 標準地の交通施設との近接状況を表示<br>近接<br>接面<br>駅前広場接面</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 周辺の土地の利用の現況</td>
+      <td height="20"> 周辺の土地の利用の現況（自由記述）</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 駅名</td>
+      <td height="20"> 最寄りの駅名</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 駅距離（駅からの距離）</td>
+      <td height="20"> 単位[m]</td>
+    </tr>
+    <tr>
+      <td rowspan="9" align="center"> 都<br>市<br>計<br>画<br>法<br>等<br>の<br>制<br>限</td>
+      <td colspan="3"> 用途区分</td>
+      <td>
+        1低専：第一種低層住居専用地域<br>2低専：第二種低層住居専用地域<br>1中専：第一種中高層住居専用地域<br>2中専：第二種中高層住居専用地域<br>1住居：第一種住居地域<br>2住居：第二種住居地域<br>準住居：準住居地域<br>近商：近隣商業地域<br>商業：商業地域<br>準工：準工業地域<br>工業：工業地域<br>工専：工業専用地域<br>田園住：田園住居地域</td>
+    </tr>
+    <tr>
+      <td colspan="3"> 防火区分</td>
+      <td> 防火：防火地域<br>準防：準防火地域</td>
+    </tr>
+    <tr>
+      <td colspan="3"> 都市計画区分</td>
+      <td> 市街化：市街化区域<br>
+調区：市街化調整区域<br>
+非線引：市街化区域及び市街化調整区域以外の都市計画区域<br>
+都計外：都市計画区域外<br>
+準都計：準都市計画区域</td>
+    </tr>
+    <tr>
+      <td colspan="3"> 高度地区</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td colspan="3"> 森林区分</td>
+      <td> 地森計：地域森林計画対象区域</td>
+    </tr>
+    <tr>
+      <td colspan="3"> 公園区分</td>
+      <td> 国立公（普通）：国立公園地域<br>
+国立公（2 種）：国立公園地域第二種特別区域<br>
+国立公（3 種）：国立公園地域第三種特別区域<br>
+国定公（普通）：国定公園区域<br>
+国定公（2 種）：国定公園第二種特別区域<br>
+国定公（3 種）：国定公園第三種特別区域</td>
+    </tr>
+    <tr>
+      <td colspan="3"> 建蔽率</td>
+      <td height="20"> 単位[%]</td>
+    </tr>
+    <tr>
+      <td colspan="3"> 容積率</td>
+      <td height="20"> 単位[%]</td>
+    </tr>
+    <tr>
+      <td colspan="3"> 割増容積率</td>
+      <td height="20"> TRUE：共通地点である<br>FALSE：共通地点ではない</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 共通地点区分</td>
+      <td height="20"> TRUE：共通地点である<br>FALSE：共通地点ではない</td>
+    </tr>
+    <tr>
+      <td colspan="4"> 対前年変動率</td>
+      <td height="20"> 前年の地価公示価格との対比から算出した基準地の変動率 <br>
+計算式は以下のとおり<br>
+（当年価格－前年価格）×100÷前年価格（小数点以下第２位を四捨五入）</td>
+    </tr>
+    <tr>
+      <td colspan="1"> 選定年次<br>ビット</td>
+      <td colspan="3"> 自　昭和58年<br>至　データの整備年</td>
+      <td height="20"> 1：選定対象年である場合<br>0：それ以外<br>をそれぞれの年次についてセットする<br>（例：平成5年のデータの場合は、11年分・11桁のデータとなる。）</td>
+    </tr>
+    <tr>
+      <td rowspan="4" colspan="1" align="center"> 公<br>示<br>価<br>格</td>
+      <td colspan="3">S58価格（昭和58年の公示価格）</td>
+      <td height="20">単位[円/m2]</td>
+    </tr>
+    <tr>
+      <td colspan="3">S59価格（昭和59年の公示価格）</td>
+      <td height="20">同上</td>
+    </tr>
+    <tr>
+      <td colspan="3">・・・</td>
+      <td height="20">・・・</td>
+    </tr>
+    <tr>
+      <td colspan="3">（データ整備年の価格）</td>
+      <td height="20">同上、データ整備年まで繰り返す</td>
+    </tr>
+    <tr>
+      <td rowspan="4" align="center"> 属<br>性<br>移<br>動</td>
+      <td rowspan="1"> 属性移動S59<br>（昭和59年調査での属性変化）</td>
+      <td colspan="2">
+        選定状況<br>
+住所漢字<br>
+地積<br>
+利用の現況<br>
+建物構造<br>
+供給施設<br>
+駅からの距離<br>
+用途区分<br>
+防火区分<br>
+都市計画区分<br>
+森林区分<br>
+公園区分<br>
+建蔽率<br>
+容積率<br>
+の14項目
+      </td>
+      <td height="20">
+        選定状況については当該年次の選定状況を次の数値で示す<br>
+1：継続<br>
+2：標準地・基準地番号変更<br>
+4：新設・選定替えで当該年追加<br>
+<br>
+選定状況以外の項目は<br>
+1：前年から変更あり<br>
+0：前年から変更なし<br>
+をそれぞれの項目について順にセットする
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3"> 属性移動S60<br>（昭和60年調査での属性変化）</td>
+      <td height="20"> 同上</td>
+    </tr>
+    <tr>
+      <td colspan="3"> ・・・</td>
+      <td height="20">・・・</td>
+    </tr>
+    <tr>
+      <td colspan="3"> （データ整備年調査での属性変化）</td>
+      <td height="20"> 同上、データ整備年まで繰り返す</td>
+    </tr>
+  </table>
+</body>
+</html>
